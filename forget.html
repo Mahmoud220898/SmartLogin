@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <title>Forget Email</title>
+</head>
+
+<body class="font sucessBody d-block" id="forget">
+    <div class="container w-25 px-3 pt-3 mt-5 shadow-lg bg-dark rounded-3">
+        <div class="w-100 mx-auto">
+            <h3 class="text-start fw-normal smart text-light my-5 ms-2 font">
+                Forgot password
+            </h3>
+            <div class="form-group">
+                <label for="frgtEmail" class=""></label>
+                <input type="text" class="form-control shadow shadow-lg maincolor font rounded-pill" id="frgtEmail"
+                    placeholder="Enter your Email" />
+            </div>
+
+            <p class="mt-5">
+                We’ll send a verification code to this email if it matches an existing
+                SmartLogin account.
+            </p>
+            <button onclick="next()" id="add"
+                class="btn mt-3 px-4 shadow shadow-lg btn-outline-info w-100 login rounded-pill">
+                Next
+            </button>
+            <button id="" class="btn mt-3 px-4 shadow shadow-lg btn-outline-light w-100 login rounded-pill">
+                <a href="index.html" class="text-decoration-none text-warning signUp">Back</a>
+            </button>
+            <p class="text-center mt-4 pb-5">
+                You have an account?
+                <a href="index.html" class="text-white signUp">Signin</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

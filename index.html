@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <title>Smart Login</title>
+</head>
+
+<body class="font sucessBody" id="body">
+    <div class="container w-50 px-5 pt-5 mt-5 d-block signInBody" id="bsignin">
+        <div class="">
+            <div class="w-100 mx-auto">
+                <h1 class="text-center fw-bold smart">Smart Login System</h1>
+                <div class="form-group">
+                    <label for="yrEmail" class="my-2"></label>
+                    <input type="text" class="form-control shadow shadow-lg maincolor font rounded-pill" id="yrEmail"
+                        placeholder="Enter your email" />
+
+                    <label for="yrPassword" class="my-2"></label>
+                    <input type="text" class="form-control shadow shadow-lg maincolor font rounded-pill" id="yrPassword"
+                        placeholder="Enter your passsword" />
+                </div>
+                <div class="mt-3 forget">
+                    <h6>
+                        <a href="forget.html" class="text-decoration-none">Forgot password ?</a>
+                    </h6>
+                </div>
+            </div>
+            <div id="required" class="text-center"></div>
+            <button onclick="SignIn()" id="add"
+                class="btn mt-3 px-4 shadow shadow-lg btn-outline-info w-100 login rounded-pill">
+                Login
+            </button>
+            <p class="text-center mt-4 pb-5">
+                Don’t have an account?
+                <a href="home.html" class="text-white signUp">Sign Up</a>
+            </p>
+        </div>
+    </div>
+    <div class="w-100 success d-none vh-100 sucessBody" id="success">
+        <nav class="navbar signInBody">
+            <div class="container-fluid justify-content-between">
+                <div class="fs-5 p-2 px-4 text-primary fw-bold">Smart login</div>
+                <a class="navbar-brand" href="index.html">
+                    <button type="button" class="btn btn-outline-warning">Login</button>
+                </a>
+            </div>
+        </nav>
+
+        <div class="container w-50 px-3 pt-5 mt-5 shadow-lg signInBody rounded-3">
+            <div class="w-100 mx-auto">
+                <div class="text-center fw-normal smart justify-content-center align-content-center fw-bolder m-3">
+                    <h2 class="pb-5 mx-5 text-center text-primary font fw-bold" id="welcome"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

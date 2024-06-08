@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <title>Sign up</title>
+</head>
+
+<body class="font sucessBody" id="body">
+    <div class="container w-50 px-5 pt-5 mt-5 d-block signInBody" id="bsignin">
+        <div class="w-100 mx-auto">
+            <h1 class="text-center fw-bold smart">Sign Up</h1>
+            <div class="form-group">
+                <label for="yrName" class=""></label>
+                <input type="text" oninput="validName()"
+                    class="form-control shadow shadow-lg maincolor font rounded-pill" id="yrName"
+                    placeholder="Enter your Name" />
+
+                <label for="yrEmail" class=""></label>
+                <input type="text" oninput="validEmail()"
+                    class="form-control shadow shadow-lg maincolor font rounded-pill" id="yrEmail"
+                    placeholder="Enter your email" />
+
+                <label for="yrPassword" class=""></label>
+                <input type="text" oninput="validPassword()"
+                    class="form-control shadow shadow-lg maincolor font rounded-pill" id="yrPassword"
+                    placeholder="Enter your passsword" />
+
+                <div id="errorSignUp"></div>
+            </div>
+            <button onclick="addEmail()" id="add"
+                class="btn mt-5 px-4 shadow shadow-lg btn-outline-info w-100 login rounded-pill">
+                Sign Up
+            </button>
+            <p class="text-center mt-4 pb-5">
+                You have an account?
+                <a href="index.html" class="text-white signUp">Signin</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
